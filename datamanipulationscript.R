@@ -46,3 +46,7 @@ penguins_rounded <- penguins_data |> mutate(across(ends_with("mm"), round, .name
 #split-apply-combine
 
 penguin_species_totals <- penguins_data |> group_by(species, island) |> summarize(total_penguins = n(), total_penguin_biomass = sum(body_mass_g, na.rm = TRUE)) |> ungroup()
+
+## intermediate r programming
+
+
